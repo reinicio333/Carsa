@@ -4,23 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" type="image/x-icon" href="img/LOGOS-CARSA.png">
-  <link rel="stylesheet" href="animate.min.css">
-
-  <title>Nuestros Productos</title>
-</head>
-
-<body>
   
+  <!-- Título del sitio -->
+  <title>Carsa - Nuestros Productos</title>
+  
+  <!-- Descripción para motores de búsqueda -->
+  <meta name="description" content="Explora nuestra selección de galletas artesanales, postres y otros productos comestibles hechos con amor. ¡Sabores únicos para todos los gustos!">
+  
+  <!-- Palabras clave -->
+  <meta name="keywords" content="galletas, postres, comida artesanal, productos comestibles, dulces, Carsa, sabores, artesanía">
+  
+  <!-- Nombre del autor -->
+  <meta name="author" content="Carsa">
+  
+  <!-- Etiquetas Open Graph para redes sociales -->
+  <meta property="og:title" content="Carsa - Delicias y Sabores Artesanales">
+  <meta property="og:description" content="Galletas artesanales, postres irresistibles y productos comestibles de alta calidad. ¡Conócenos y enamórate de nuestros sabores!">
+  <meta property="og:image" content="img/galletas-y-postres.webp">
+  <meta property="og:url" content="https://www.carsabo.com">
+  <meta property="og:type" content="website">
+  
+  <!-- Etiquetas de Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carsa - Delicias y Sabores Artesanales">
+  <meta name="twitter:description" content="Descubre nuestras deliciosas galletas y productos comestibles únicos. ¡Hechos con pasión para ti!">
+  <meta name="twitter:image" content="img/LOGOS-CARSA.webp">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/LOGOS-CARSA.webp">
+
+  <!-- Enlaces a hojas de estilo -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Enlace a fuentes personalizadas (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Icono de la web para dispositivos Apple -->
+  <link rel="apple-touch-icon" href="img/LOGOS-CARSA.webp">
+</head>
+<body>
+
   <div id="loader" class="contenedor-carga">
     <section>
       <div id="preloader">
         <div id="ctn-preloader" class="ctn-preloader">
           <div class="animation-preloader">
-            <div class="spinner"></div>
+            <div class="text-center m-4">
+              <img class="w-50" src="img/veganz-vegan.gif" alt="" srcset="">
+          </div>
             <div class="txt-loading">
               <span data-text-preloader="C" class="letters-loading">
                 C
@@ -47,7 +82,7 @@
                 O
               </span>
             </div>
-          </div>	
+          </div>
           <div class="loader-section section-left"></div>
           <div class="loader-section section-right"></div>
         </div>
@@ -68,28 +103,56 @@
     </div>
     <nav class="navbar navbar-expand-lg fixed-top bg-carsa">
       <div class="container-fluid">
-        <a href="index.html">
-          <img src="img/LOGOS-CARSA.png" class="logo-navbar w-sm-10 animate__animated animate__fadeInLeft">
+
+        <a href="index.html" class="d-none d-md-block d-lg-block d-xl-block">
+          <img src="img/LOGOS-CARSA.webp" class="logo-navbar w-sm-10 animate__animated animate__fadeInLeft">
         </a>
-
-
+        <a href="index.html" class="d-block d-md-none d-lg-none d-xl-none w-75">
+          <img src="img/LOGOS-CARSA.webp" class="w-50 animate__animated animate__fadeInLeft">
+        </a>
 
         <div class="offcanvas offcanvas-center" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/LOGOS-CARSA.webp"
+                class="w-25 animate__animated animate__fadeInLeft"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
+          <div class="offcanvas-body d-none d-md-block d-lg-block">
             <ul class="navbar-nav justify-content-center d-flex flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="nosotros.html">Nosotros</a>
+                <a class="nav-link mx-lg-2 " href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2 active navbar-action" href="nuestros_productos.html">Nuestros Productos</a>
+                <a class="nav-link active navbar-action mx-lg-2" href="nuestros_productos.html">Nuestros Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="nuestros_productos_navi.html">Productos Navideños</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="offcanvas-body bg-black d-block d-md-none d-lg-none">
+            <ul class="navbar-nav justify-content-center d-flex flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 " href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbar-action mx-lg-2" href="nuestros_productos.html">Nuestros Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="nuestros_productos_navi.html">Productos Navideños</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="novedades.html">Novedades</a>
@@ -100,187 +163,352 @@
             </ul>
           </div>
         </div>
+
         <div class="d-none d-lg-flex animate__animated animate__fadeInRight iconos-cabecera">
           <a class="login-button w-auto mx-2" href="https://www.facebook.com/GalletasCarsa" target="_blank">
-            <img src="img/medios/facebook2.png" alt="Facebook" class="circle-image">
+            <img src="img/medios/facebook2.webp" alt="Facebook" class="circle-image">
           </a>
           <a class="login-button w-auto mx-2"
             href="https://www.instagram.com/galletascarsa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank">
-            <img src="img/medios/instagram.png" alt="Instagram" class="circle-image">
+            <img src="img/medios/instagram.webp" alt="Instagram" class="circle-image">
           </a>
           <a class="login-button w-auto mx-2"
             href="https://www.tiktok.com/@galletascarsabo?fbclid=IwY2xjawEq_wFleHRuA2FlbQIxMAABHZknIYGycOnhHHCfRXi7jhXuOubCNbGMSJx8uGA9qoQcwzWpyS-0cAllUA_aem_SHTmAZfQZ_X1chAKmecyxg#"
             target="_blank">
-            <img src="img/medios/tik-tok2.png" alt="Tiktok" class="circle-image">
+            <img src="img/medios/tik-tok2.webp" alt="Tiktok" class="circle-image">
           </a>
           <a class="login-button w-auto mx-2" href="https://www.youtube.com/@GalletasCarsaBolivia" target="_blank">
-            <img src="img/medios/youtube.png" alt="Youtube" class="circle-image">
+            <img src="img/medios/youtube.webp" alt="Youtube" class="circle-image">
           </a>
         </div>
-
-
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="wave-line"></div>
-
+      <div class="wave-line d-none d-md-block d-lg-block d-xl-block"></div>
     </nav>
+    <div class="d-none d-md-block d-lg-block  ">
+      <div id="menuProductos" class="transition scale-in">
+        <!-- Contenido del menú de productos -->
+        <img src="img/nuestros_productos/imagenes/principal/fondo-nuestros-productos.webp" class="nproductos-mesa"
+          alt="">
+        <div class="nproductos-total align-items-center">
+          <img class="letra-producto" src="img/nuestros_productos/imagenes/principal/letra-productos.webp" alt="">
 
-    <div id="menuProductos" class="transition scale-in">
-      <!-- Contenido del menú de productos -->
-      <img src="img/nuestros_productos/imagenes/principal/fondo-nuestros-productos.jpg" class="nproductos-mesa" alt="">
-      <div class="nproductos-total">
-        <img class="letra-producto" src="img/nuestros_productos/imagenes/principal/letra-productos.png" alt="">
+          <div class="nproductos-primera text-end">
+            <a href="#" onclick="showModal(event,'idDixy')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-dixy.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idDaditos')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-daditos.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idRosquitas')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-roscas.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idGalleticones')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-galleticones.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idChip')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-chips.webp" alt=""></a>
+          </div>
+          <div class="nproductos-segunda text-end">
 
-        <div class="nproductos-primera text-end">
-          <a href="#" onclick="showModal('idDixy')"><img src="img/nuestros_productos/imagenes/principal/icon-dixy.png"
-              alt=""></a>
-          <a href="#" onclick="showModal('idDaditos')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-daditos.png" alt=""></a>
-          <a href="#" onclick="showModal('idRosquitas')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-roscas.png" alt=""></a>
-          <a href="#" onclick="showModal('idChip')"><img src="img/nuestros_productos/imagenes/principal/icon-chips.png"
-              alt=""></a>
-        </div>
-        <div class="nproductos-segunda">
-          <a href="#" onclick="showModal('idMiniCricks')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-mini-cricks.png" alt=""></a>
-          <a href="#" onclick="showModal('idCricks')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-cricks.png" alt=""></a>
-          <a href="#" onclick="showModal('idGalleticones')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-galleticones.png" alt=""></a>
-          <a href="#" onclick="showModal('idDoris')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-maria-doris.png" alt=""></a>
-          <a href="#" onclick="showModal('idMariaMorena')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-maria-morena.png" alt=""></a>
-        </div>
-        <div class="nproductos-tercera text-end">
-          <a href="#" onclick="showModal('idAlfa')"><img src="img/nuestros_productos/imagenes/principal/icon-alfa.png"
-              alt=""></a>
-          <a href="#" onclick="showModal('idWafer')"><img src="img/nuestros_productos/imagenes/principal/icon-wafer.png"
-              alt=""></a>
-          <a href="#" onclick="showModal('idJirafa')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-jirafa.png" alt=""></a>
-          <a href="#" onclick="showModal('idDorita')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-cracker-dorita.png" alt=""></a>
-          <a href="#" onclick="showModal('idSuperDoritas')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-super-doraditas.png" alt=""></a>
-          <a href="#" onclick="showModal('idCDoraditas')"><img
-              src="img/nuestros_productos/imagenes/principal/icon-doraditas.png" alt=""></a>
+            <a href="#" onclick="showModal(event,'idCricks')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-cricks.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idMiniCricks')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-mini-cricks.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idDorita')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-cracker-dorita.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idDoris')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-maria-doris.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idMariaMorena')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-maria-morena.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idAlfa')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-alfa.webp" alt=""></a>
+          </div>
+          <div class="nproductos-tercera text-end">
+
+            <a href="#" onclick="showModal(event,'idWafer')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-wafer.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idWafy')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-wafy.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idMiniWafy')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-mini-wafy.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idJirafa')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-jirafanew.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idCDoraditas')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-doraditas.webp" alt=""></a>
+            <a href="#" onclick="showModal(event,'idSuperDoritas')"><img
+                src="img/nuestros_productos/imagenes/principal/icon-super-doraditas.webp" alt=""></a>
+
+          </div>
         </div>
       </div>
     </div>
+
     <!-- Contenido inicio imagenes modales -->
     <div id="idDixy" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/dixy.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/dixy.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idDixy')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idDaditos" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/daditos.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/daditos2.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idDaditos')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idRosquitas" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/rosquillas.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/rosquillas.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idRosquitas')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idChip" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/chip_o_chip.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/chip_o_chip.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idChip')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idMiniCricks" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/mini_cricks.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/mini_cricks.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idMiniCricks')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idCricks" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/cricks.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/cricks.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idCricks')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idGalleticones" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/galleticones.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/galleticones.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idGalleticones')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idDoris" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/doris.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/doris.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idDoris')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idMariaMorena" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/maria_morena.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/maria_morena.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idMariaMorena')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idWafer" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/wafer.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/wafer.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idWafer')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
+      </button>
+    </div>
+    <div id="idWafy" class="transition alfa d-none">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/wafy2.webp" alt="" class="superponer">
+      <button class="btn btn-productos border-0" onclick="btnMenu('idWafy')"> <!-- Botón para volver al menú -->
+        <img src="img/medios/close.webp" alt="">
+      </button>
+    </div>
+    <div id="idMiniWafy" class="transition alfa d-none">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/mini_wafy2.webp" alt="" class="superponer">
+      <button class="btn btn-productos border-0" onclick="btnMenu('idMiniWafy')"> <!-- Botón para volver al menú -->
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idJirafa" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/jirafa.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/jirafa-new2.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idJirafa')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idDorita" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/dorita.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/doraditas.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idDorita')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idSuperDoritas" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/super_doraditas.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/super_doraditas.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idSuperDoritas')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idCDoraditas" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/crackers_doraditas.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/crackers_doraditas.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idCDoraditas')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <div id="idAlfa" class="transition alfa d-none">
-      <img src="img/nuestros_productos/fofofo.jpg" alt="" class="alfa-f">
-      <img src="img/nuestros_productos/imagenes/sinsap/alfa.png" alt="" class="superponer">
+      <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+      <img src="img/nuestros_productos/imagenes/sinsap/alfa.webp" alt="" class="superponer">
       <button class="btn btn-productos border-0" onclick="btnMenu('idAlfa')"> <!-- Botón para volver al menú -->
-        <img src="img/medios/close.png" alt="">
+        <img src="img/medios/close.webp" alt="">
       </button>
     </div>
     <!-- Contenido fin imagenes modales -->
+    <div class="container d-block d-md-none d-lg-none d-xl-none d-xxl-none" style="margin-top: 6rem;">
+      <div class="row">
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Dixy"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/dixy.webp">
+            <img class="w-100 " src="img/nuestros_productos/imagenes/principal/icon-dixy.webp" alt="">
+          </a>
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Daditos"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/daditos2.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-daditos.webp" alt=""></a>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Rosquillas"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/rosquillas.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-roscas.webp" alt=""></a>
+
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Galleticones"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/galleticones.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-galleticones.webp" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Mini Chip o Chip"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/chip_o_chip.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-chips.webp" alt=""></a>
+
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Cricks"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/cricks.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-cricks.webp" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Mini Cricks"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/mini_cricks.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-mini-cricks.webp" alt=""></a>
+
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Cracker Dorita"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/doraditas.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-cracker-dorita.webp" alt=""></a>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Maria Doris"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/doris.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-maria-doris.webp" alt=""></a>
+
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Maria Morena"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/maria_morena.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-maria-morena.webp" alt=""></a>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Alfa "
+            data-img-src="img/nuestros_productos/imagenes/sinsap/alfa.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-alfa.webp" alt=""></a>
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Wafer Dorita"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/wafer.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-wafer.webp" alt=""></a>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Wafy"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/wafy2.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-wafy.webp" alt=""></a>
+
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Mini Wafy"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/mini_wafy2.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-mini-wafy.webp" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Cracker Jirafa"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/jirafa-new2.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-jirafanew.webp" alt=""></a>
+
+
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Cracker Doraditas"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/crackers_doraditas.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-doraditas.webp" alt=""></a>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-6">
+          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="Super Doraditas"
+            data-img-src="img/nuestros_productos/imagenes/sinsap/super_doraditas.webp"><img class="w-100"
+              src="img/nuestros_productos/imagenes/principal/icon-super-doraditas.webp" alt=""></a>
+
+
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Título por defecto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0 bg-black">
+            <img src="img/nuestros_productos/fofofo.webp" alt="" class="alfa-f">
+            <img id="modal-img" src="img/nuestros_productos/imagenes/principal/default.webp" alt=""
+              class="w-100 superponer">
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -291,38 +519,64 @@
 
     <div class="pie-pagina">
       <div class="row">
-        <div class="col-2 d-flex justify-content-center align-items-center">
-          <img class="logo-pie-pagina" src="img/LOGOS-CARSA.png" alt="" srcset="">
+        <div
+          class="d-none d-md-block d-lg-block d-xl-block d-xxl-block col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center text-center">
+          <img class="logo-pie-pagina" src="img/LOGOS-CARSA.webp" alt="" srcset="">
         </div>
 
-        <div class="col-3 py-3 m-auto pie-pagina-contactos">
+        <div class="col-12 col-md-3 col-lg-3 col-xl-3 py-3 m-auto pie-pagina-contactos">
           <a href="https://goo.gl/maps/8hEtLv2eA2FevoCy7" class="d-block my-1" target="_blank">
-            <img src="img/medios/ubi.png" alt=""> Av. Hacia el mar Nº 100, Zona La
+            <img src="img/medios/ubi.webp" alt=""> Av. Hacia El Mar Nº 100, Zona La
             Florida, Viacha, Bolivia</a>
           <label class="d-block my-1">
-            <img src="img/medios/telefono.png" alt=""> 2 2882776</label>
+            <img src="img/medios/telefono.webp" alt=""> 2 2882776</label>
           <label class="d-block my-1">
-            <img src="img/medios/celular.png" alt=""> (+591) 78967819</label>
+            <img src="img/medios/celular.webp" alt=""> (+591) 78967819</label>
           <label class="d-block my-1">
-            <img src="img/medios/correo.png" alt=""> mcerruto@carsabo.com</label>
+            <img src="img/medios/correo.webp" alt=""> ventas@carsabo.com</label>
         </div>
-        <div class="col-4 py-3 medios-pie m-auto">
+        <div
+          class="d-none d-md-block d-lg-block d-xl-block d-xxl-block col-12 col-md-4 col-lg-4 col-xl-4 py-3 medios-pie m-auto">
           <div class="d-lg-flex text-center align-items-center">
             <h5 class="text-white d-inline text-center">Síguenos</h5>
 
             <a href="https://www.facebook.com/GalletasCarsa" target="_blank">
-              <img src="img/medios/face-big.png" alt="Facebook" class="circle-image">
+              <img src="img/medios/face-big.webp" alt="Facebook" class="circle-image">
             </a>
             <a href="https://www.instagram.com/galletascarsa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank">
-              <img src="img/medios/insta-big.png" alt="Instagram" class="circle-image">
+              <img src="img/medios/insta-big.webp" alt="Instagram" class="circle-image">
             </a>
             <a href="https://www.tiktok.com/@galletascarsabo?fbclid=IwY2xjawEq_wFleHRuA2FlbQIxMAABHZknIYGycOnhHHCfRXi7jhXuOubCNbGMSJx8uGA9qoQcwzWpyS-0cAllUA_aem_SHTmAZfQZ_X1chAKmecyxg#"
               target="_blank">
-              <img src="img/medios/tiktok-big.png" alt="Tiktok" class="circle-image">
+              <img src="img/medios/tiktok-big.webp" alt="Tiktok" class="circle-image">
             </a>
             <a href="https://www.youtube.com/@GalletasCarsaBolivia" target="_blank">
-              <img src="img/medios/youtube-big.png" alt="Youtube" class="circle-image">
+              <img src="img/medios/youtube-big.webp" alt="Youtube" class="circle-image">
+            </a>
+
+          </div>
+
+
+        </div>
+        <div
+          class="d-block d-md-none d-lg-none d-xl-none d-xxl-none col-12 col-md-4 col-lg-4 col-xl-4 py-3 medios-pie2 m-auto">
+          <div class="d-lg-flex text-center align-items-center">
+            <h5 class="text-white d-inline text-center">Síguenos</h5>
+
+            <a href="https://www.facebook.com/GalletasCarsa" target="_blank">
+              <img src="img/medios/face-big.webp" alt="Facebook" class="circle-image">
+            </a>
+            <a href="https://www.instagram.com/galletascarsa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank">
+              <img src="img/medios/insta-big.webp" alt="Instagram" class="circle-image">
+            </a>
+            <a href="https://www.tiktok.com/@galletascarsabo?fbclid=IwY2xjawEq_wFleHRuA2FlbQIxMAABHZknIYGycOnhHHCfRXi7jhXuOubCNbGMSJx8uGA9qoQcwzWpyS-0cAllUA_aem_SHTmAZfQZ_X1chAKmecyxg#"
+              target="_blank">
+              <img src="img/medios/tiktok-big.webp" alt="Tiktok" class="circle-image">
+            </a>
+            <a href="https://www.youtube.com/@GalletasCarsaBolivia" target="_blank">
+              <img src="img/medios/youtube-big.webp" alt="Youtube" class="circle-image">
             </a>
 
           </div>
@@ -334,8 +588,9 @@
 
         </div>
       </div>
+
       <div class="row">
-        <hr>
+
         <div class="col-12 text-center text-white">
           <h5 class="copy">Copyright Carsa 2024 | Todos los derechos reservados | La Paz - Bolivia</h5>
         </div>
@@ -344,8 +599,11 @@
 
 
   </div>
+
+
   <script src="bootstrap/bootstrap.min.js"></script>
-  <script src="index.js"></script>
+  <script src="index2.js"></script>
+
 </body>
 
 </html>

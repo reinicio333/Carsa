@@ -1,10 +1,14 @@
-window.onload = function() {
-    // Ocultar el loader
+
+
+window.onload = function () {
+    // Ocultar el loader y mostrar el contenido de la página después de la carga
     document.getElementById('loader').style.display = 'none';
-    // Mostrar el contenido de la página
     document.getElementById('content').style.display = 'block';
 };
-function showModal(id) {
+
+// Función para mostrar un modal con animación de escala
+function showModal(event,id) {
+    event.preventDefault();
     var div = document.getElementById(id);
     var divMenu = document.getElementById("menuProductos");
 
@@ -13,67 +17,47 @@ function showModal(id) {
     divMenu.classList.add("scale-out");
 
     // Espera el tiempo de la transición para ocultar el divMenu
-    setTimeout(function() {
-        divMenu.classList.add("d-none"); // Oculta el div del menú
+    setTimeout(function () {
+        divMenu.classList.add("d-none");
 
-        // Configura el divAlfa para que esté listo para la animación
+        // Muestra el div y aplica la animación de entrada
         div.classList.remove("d-none");
-        
-        // Forzar reflow para aplicar la animación de entrada
         div.offsetHeight; // Forzar reflow
-
-        // Usar requestAnimationFrame para asegurarse de que la transición se aplique
-        requestAnimationFrame(function() {
-            requestAnimationFrame(function() {
-                div.classList.add("scale-in");
-            });
-        });
-
-    }, 200); // 500ms coincide con la duración de la transición en CSS
+        requestAnimationFrame(() => div.classList.add("scale-in"));
+    }, 200); // 200ms de espera, ajusta según la duración de la animación en CSS
 }
 
+// Función para volver al menú principal
 function btnMenu(id) {
     var div = document.getElementById(id);
     var divMenu = document.getElementById("menuProductos");
 
-    // Inicia la animación de salida para divAlfa
+    // Inicia la animación de salida para div
     div.classList.remove("scale-in");
     div.classList.add("scale-out");
 
-    // Espera el tiempo de la transición para ocultar el divAlfa
-    setTimeout(function() {
-        div.classList.add("d-none"); // Oculta el div Alfa
+    // Espera el tiempo de la transición para ocultar el div
+    setTimeout(function () {
+        div.classList.add("d-none");
 
-        // Configura el divMenu para que esté listo para la animación
+        // Muestra el divMenu y aplica la animación de entrada
         divMenu.classList.remove("d-none");
-        
-        // Forzar reflow para aplicar la animación de entrada
         divMenu.offsetHeight; // Forzar reflow
-
-        // Usar requestAnimationFrame para asegurarse de que la transición se aplique
-        requestAnimationFrame(function() {
-            requestAnimationFrame(function() {
-                divMenu.classList.add("scale-in");
-            });
-        });
-
-    }, 200); // 500ms coincide con la duración de la transición en CSS
+        requestAnimationFrame(() => divMenu.classList.add("scale-in"));
+    }, 200); // 200ms de espera, ajusta según la duración de la animación en CSS
 }
 
+// Código jQuery para el preloader
+$(document).ready(function () {
+    setTimeout(function () {
+        $('#ctn-preloader').addClass('loaded');
+        $('body').removeClass('no-scroll-y');
 
-$(document).ready(function() {
-  
-    setTimeout(function() {
-      $('#ctn-preloader').addClass('loaded');
-      // Una vez haya terminado el preloader aparezca el scroll
-      $('body').removeClass('no-scroll-y');
-  
-      if ($('#ctn-preloader').hasClass('loaded')) {
-        // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
-        $('#preloader').delay(1000).queue(function() {
-          $(this).remove();
-        });
-      }
-    }, 3000);
-    
-  });
+        if ($('#ctn-preloader').hasClass('loaded')) {
+            $('#preloader').delay(1000).queue(function () {
+                $(this).remove();
+            });
+        }
+    }, 3000); // 3000ms espera para la animación del preloader
+});
+
